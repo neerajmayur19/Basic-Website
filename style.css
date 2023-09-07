@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Navigation Bar*/
+#navigation
+{
+    display :flex;
+    align-items: center;
+    position: relative;
+}
+#navigation::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+/*Logo and Image stacked in the navigation bar*/
+#logo{
+    margin: 12px 12px;
+}
+#logo img{
+    height: 50px;
+}
+#navigation ul{
+display: flex;
+}
+#navigation ul li{
+    list-style: none;
+    font-size: medium;
+}
+#navigation ul li a{
+    display: block;
+    padding: 2px 32px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navigation ul li a:hover{
+    color: black;
+    background-color: rgb(143, 143, 190);
+}
+/*Home*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+    height: 520px;
+}
+#home::before{
+    content: "";
+    background: url(Images/pexels-ella-olsson-1640774.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 20px 220px;
+}
+/*Section with ID:Cuisines*/
+#box{
+    padding: 34px;
+    display: flex;
+}
+#box .inner-box{
+    border: 2px solid rgb(167, 98, 98);
+    margin: 4px;
+    background-color: lightblue;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+#box .inner-box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+}
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content:  "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(Images/contact.jpg) no-repeat center center/cover;
+}
+
+#contact-forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.con label{
+    font-size: 15px;
+}
+
+.con input{
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.con textarea{
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Utility Classes*/
+.heading{
+    font-size: 50px;
+    padding: 15px;
+}
+.primary-heading{
+    font-size: 50px;
+    padding: 15px;
+    text-align: center;
+}
+.secondary-heading{
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+}
+.b{
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid brown;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.centre{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background-color: grey;
+    color: black;
+}
